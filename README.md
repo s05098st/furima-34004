@@ -14,7 +14,7 @@
 ## Association
 
 has_many:products
-has_one:record
+has_many:records
 
 
 ## destinationテーブル
