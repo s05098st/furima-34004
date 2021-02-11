@@ -17,7 +17,7 @@ has_many:products
 has_many:records
 
 
-## destinationテーブル
+## destinationsテーブル
 
 |Column       |Type   |Options                      |
 |-------------|-------|-----------------------------|
@@ -35,7 +35,7 @@ has_many:records
 belongs_to:record
 
 
-## productテーブル
+## productsテーブル
 
 |Column       |Type      |Options                    |
 |-------------|----------|---------------------------|
@@ -54,7 +54,7 @@ belongs_to:record
 belongs_to:user
 has_one:record
 
-## record
+## records
 |Column     |Type    |Options                      |
 |-----------|--------|-----------------------------|
 |product_id |integer |null: false,foreign_key: true|
