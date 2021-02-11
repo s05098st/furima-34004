@@ -1,4 +1,4 @@
-<mxfile host="65bd71144e" modified="2021-02-11T03:03:38.379Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.52.1 Chrome/83.0.4103.122 Electron/9.3.5 Safari/537.36" etag="McDC7iH4yfRJI-ir6u_n" version="14.2.4" type="embed">
+<mxfile host="65bd71144e" modified="2021-02-11T03:40:15.464Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Code/1.52.1 Chrome/83.0.4103.122 Electron/9.3.5 Safari/537.36" etag="o4JDKrL3Kent-W6hZgik" version="14.2.4" type="embed">
     <diagram id="STrpLtNDLJLifV6vF7aE" name="ページ1">
         <mxGraphModel dx="601" dy="739" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
@@ -13,13 +13,13 @@
                 <mxCell id="36" value="product（出品商品の情報）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry y="400" width="220" height="180" as="geometry"/>
                 </mxCell>
-                <mxCell id="37" value="name&#10;description&#10;category_id&#10;condition_id&#10;prefecture_id&#10;price&#10;cost_id&#10;days_id&#10;" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="36" vertex="1">
+                <mxCell id="37" value="name&#10;description&#10;category_id&#10;condition_id&#10;prefecture_id&#10;price&#10;cost_id&#10;days_id&#10;user_id&#10;" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="36" vertex="1">
                     <mxGeometry y="26" width="220" height="154" as="geometry"/>
                 </mxCell>
                 <mxCell id="45" value="destination（購入商品発送先）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="270" y="60" width="210" height="150" as="geometry"/>
                 </mxCell>
-                <mxCell id="47" value="post_code&#10;prefecture&#10;city&#10;address&#10;bulding_name&#10;phone_number&#10;user_id&#10;" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="45" vertex="1">
+                <mxCell id="47" value="post_code&#10;prefecture_id&#10;city&#10;address&#10;bulding_name&#10;phone_number&#10;product_id&#10;" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;" parent="45" vertex="1">
                     <mxGeometry y="26" width="210" height="124" as="geometry"/>
                 </mxCell>
                 <mxCell id="49" value="record（購入記録）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;align=center;fontSize=14;" parent="1" vertex="1">
