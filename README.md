@@ -13,7 +13,7 @@
 
 ## Association
 
-has_many:products
+has_many:items
 has_many:records
 
 
@@ -35,7 +35,7 @@ has_many:records
 belongs_to:record
 
 
-## productsテーブル
+## itemsテーブル
 
 |Column       |Type      |Options                    |
 |-------------|----------|---------------------------|
@@ -57,11 +57,11 @@ has_one:record
 ## records
 |Column     |Type    |Options                      |
 |-----------|--------|-----------------------------|
-|product_id |integer |null: false,foreign_key: true|
+|item_id    |integer |null: false,foreign_key: true|
 |user_id    |integer |null: false,foreign_key: true|
 
 ## Association
 
 has_one:destination
 belongs_to:user
-belongs_to:product
+belongs_to:item
