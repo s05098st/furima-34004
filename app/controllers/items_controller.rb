@@ -15,7 +15,15 @@ class ItemsController < ApplicationController
 
   def edit
     @item = Item.find(params[:id])
+  end
 
+  def update
+    if @item.update(item_params)
+      redirect_to item_path
+    else
+      render :edit
+    end
+  end
 
   def create
     @item = Item.new(item_params)
