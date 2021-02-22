@@ -54,11 +54,11 @@ belongs_to:record
 belongs_to:user
 has_one:record
 
-## records
-|Column     |Type    |Options                      |
-|-----------|--------|-----------------------------|
-|item_id    |integer |null: false,foreign_key: true|
-|user_id    |integer |null: false,foreign_key: true|
+## orders
+|Column     |Type       |Options                      |
+|-----------|-----------|-----------------------------|
+|item       |references |null: false,foreign_key: true|
+|user       |references |null: false,foreign_key: true|
 
 ## Association
 
