@@ -6,6 +6,6 @@ FactoryBot.define do
     prefecture_city {"横浜市"}
     prefecture_block {"青山"}
     prefecture_building {"柳"}
-    phone_number {1234567899}
+    phone_number {"1234567899"}
   end
 end
