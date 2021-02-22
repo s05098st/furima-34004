@@ -108,25 +108,7 @@ RSpec.describe OrderAddress, type: :model do
       expect(@orderaddress.errors.full_messages).to include("Item can't be blank")
     end
 
-    it 'card_numberがなければ購入できない' do
-      @orderaddress.token = nil
-      @orderaddress.valid?
-      expect(@orderaddress.errors.full_messages).to include("Token can't be blank")
-    end
-
-    it 'exp_monthがないければ購入できない' do
-      @orderaddress.token = nil
-      @orderaddress.valid?
-      expect(@orderaddress.errors.full_messages).to include("Token can't be blank")
-    end
-
-    it 'exp_yearがないければ購入できない' do
-      @orderaddress.token = nil
-      @orderaddress.valid?
-      expect(@orderaddress.errors.full_messages).to include("Token can't be blank")
-    end
-
-    it 'cvcがないと購入できない' do
+    it 'tokenが空の場合購入できない' do
       @orderaddress.token = nil
       @orderaddress.valid?
       expect(@orderaddress.errors.full_messages).to include("Token can't be blank")
