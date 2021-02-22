@@ -1,8 +1,4 @@
 class OrdersController < ApplicationController
-  before_action :authenticate_user!
-  before_action :set_item
-  before_action :move_to_index
-  before_action :sold_move_to_index
 
   def index
     @orderaddress = OrderAddress.new
@@ -26,7 +22,7 @@ class OrdersController < ApplicationController
   end
 
   def pay_item
-    Payjp.api_key =  'sk_test_df0f24383571f665887fc795'    # 自身のPAY.JPテスト秘密鍵を記述しましょう
+    Payjp.api_key =  ENV['PAYJP_SECRET_KEY']   # 自身のPAY.JPテスト秘密鍵を記述しましょう
     Payjp::Charge.create(
       amount: @item.price, # 商品の値段
       card: orderaddress_params[:token], # カードトークン
