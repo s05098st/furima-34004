@@ -8,7 +8,7 @@ class OrdersController < ApplicationController
   end
 
   def create
-    @orderaddress = OrderAddress.new(orderaddress_params)
+      @orderaddress = OrderAddress.new(orderaddress_params)
     if @orderaddress.valid?
       pay_item
       @orderaddress.save
